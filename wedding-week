@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Wedding Week | Katherine & Gavin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background-color: #f7f4ef;
+  color: #5a3a2e;
+}
+
+.nav {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #5a3a2e;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page {
+  margin-top: 150px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.event {
+  margin-top: 40px;
+}
+
+.event-title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.event-details {
+  font-size: 16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="travel.html">Travel</a>
+<a href="wedding-week.html">Wedding Week</a>
+<a href="details.html">Details</a>
+<a href="gallery.html">Photo Gallery</a>
+<a href="rsvp.html">RSVP</a>
+</div>
+
+<div class="page">
+
+<h1>Wedding Week</h1>
+
+<div class="event">
+<div class="event-title">Welcome Party</div>
+<div class="event-details">Friday Evening · Downtown Durango</div>
+</div>
+
+<div class="event">
+<div class="event-title">Wedding Ceremony & Reception</div>
+<div class="event-details">Saturday · July 17, 2027 · Flying B Ranch</div>
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>
