@@ -70,23 +70,48 @@
       letter-spacing: 2px;
       text-transform: uppercase;
     }
-   @media (max-width: 600px) {
+  @media (max-width: 600px) {
 
   .site-title {
-    font-size: 36px;
-    letter-spacing: 3px;
+    top: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    white-space: nowrap;
   }
 
   .nav {
-    top: 100px;
-    gap: 14px;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px 14px;
+    width: 90%;
   }
 
   .nav a {
-    font-size: 13px;
+    font-size: 11px;
+    letter-spacing: 1px;
   }
+
+  .bottom-text {
+    margin-bottom: 55px;
+    padding: 0 20px;
+  }
+
+  .location {
+    font-size: 20px;
+  }
+
+  .countdown {
+    font-size: 14px;
+  }
+
+  .coming {
+    font-size: 14px;
+  }
+}
 
 }
 
