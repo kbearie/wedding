@@ -5,6 +5,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
 
   <style>
+    .countdown {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
     body {
       margin: 0;
       font-family: 'Cinzel', serif;
@@ -70,9 +76,29 @@
 </div>
 
   <div class="bottom-text">
-    <div class="location">Durango, Colorado</div>
-    <div class="coming">More information coming soon</div>
-  </div>
+  <div class="location">Durango, Colorado</div>
+  <div id="countdown" class="countdown"></div>
+  <div class="coming">More information coming soon</div>
+</div>
+<script>
+  const weddingDate = new Date("July 17, 2027 00:00:00").getTime();
+  const countdown = document.getElementById("countdown");
 
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance <= 0) {
+      countdown.innerHTML = "It's wedding day";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    countdown.innerHTML = days + " days until forever";
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
 </body>
 </html>
