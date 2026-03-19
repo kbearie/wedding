@@ -5,12 +5,12 @@
   <title>Katherine & Gavin</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
   <style>
-   .site-title {
+.site-title {
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 48px;
+  font-size: 40px;
   letter-spacing: 6px;
   color: #5a3a2e;
   white-space: nowrap;
@@ -38,7 +38,7 @@
 
 .nav {
   position: absolute;
-  top: 95px; /* keeps it below your title */
+  top: 85px; /* keeps it below your title */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -55,7 +55,16 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
+.nav::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 60%;
+  height: 1px;
+  background-color: rgba(90, 58, 46, 0.3);
+}
     .bottom-text {
       color: #5a3a2e;
       text-align: center;
