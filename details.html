@@ -14,10 +14,19 @@ body {
   background-color: #f7f4ef;
   color: #5a3a2e;
 }
-
+.site-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  letter-spacing: 6px;
+  color: #5a3a2e;
+  white-space: nowrap;
+}
 .nav {
   position: absolute;
-  top: 35px;
+  top: 85px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -34,7 +43,16 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
+.nav::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 60%;
+  height: 1px;
+  background-color: rgba(90, 58, 46, 0.3);
+}
 .page {
   margin-top: 150px;
   text-align: center;
@@ -66,7 +84,7 @@ p {
 </head>
 
 <body>
-
+<div class="site-title">Katherine & Gavin</div>
 <div class="nav">
   <a href="index.html">Home</a>
   <a href="flying-b-ranch.html">Flying B Ranch</a>
