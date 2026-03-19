@@ -1,74 +1,304 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-<title>Travel | Katherine & Gavin</title>
+  <title>Travel | Katherine & Gavin</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
 
-<style>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background-color: #f7f4ef;
+      color: #5a3a2e;
+    }
 
-body {
-  margin: 0;
-  font-family: 'Cinzel', serif;
-  background-color: #f7f4ef;
-  color: #5a3a2e;
-}
+    .nav {
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+    }
 
-.nav {
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 40px;
-}
+    .nav a {
+      text-decoration: none;
+      color: #5a3a2e;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-.nav a {
-  text-decoration: none;
-  color: #5a3a2e;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
+    .page {
+      margin-top: 150px;
+      text-align: center;
+      padding: 0 20px 80px;
+    }
 
-.page {
-  margin-top: 150px;
-  text-align: center;
-}
+    h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-  font-size: 40px;
-  letter-spacing: 3px;
-}
+    .intro {
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 auto 50px;
+      line-height: 1.8;
+    }
 
-p {
-  font-size: 18px;
-}
+    .section {
+      max-width: 850px;
+      margin: 0 auto 55px;
+    }
 
-</style>
+    .section h2 {
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
 
+    .card {
+      background-color: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(90, 58, 46, 0.12);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      color: #5a3a2e;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        gap: 18px;
+        top: 25px;
+      }
+
+      .nav a {
+        font-size: 13px;
+      }
+
+      .page {
+        margin-top: 180px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .section h2 {
+        font-size: 22px;
+      }
+
+      .card h3 {
+        font-size: 19px;
+      }
+
+      .card p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="nav">
-  <a href="index.html">Home</a>
-  <a href="flying-b-ranch.html">Flying B Ranch</a>
-  <a href="travel.html">Travel</a>
-  <a href="wedding-week.html">Wedding Week</a>
-  <a href="details.html">Details</a>
-  <a href="gallery.html">Photo Gallery</a>
-  <a href="rsvp.html">RSVP</a>
-</div>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="flying-b-ranch.html">Flying B Ranch</a>
+    <a href="travel.html">Travel</a>
+    <a href="wedding-week.html">Wedding Week</a>
+    <a href="details.html">Details</a>
+    <a href="gallery.html">Photo Gallery</a>
+    <a href="rsvp.html">RSVP</a>
+  </div>
 
-<div class="page">
+  <div class="page">
 
-<h1>Travel</h1>
+    <h1>Travel</h1>
 
-<p>Information on flights, lodging, and transportation will be shared soon.</p>
+    <p class="intro">
+      We’re so excited to celebrate with everyone in Durango. As you join us for our wedding weekend, we hope you’ll also have time to experience and explore this beautiful part of Colorado. Below are a few travel, lodging, dining, and activity recommendations to help make your trip easy and fun.
+    </p>
 
-</div>
+    <div class="section">
+      <h2>Travel</h2>
+
+      <div class="card">
+        <h3>Durango–La Plata County Airport</h3>
+        <p>
+          The Durango airport is about 20 minutes from downtown Durango. There are nonstop
+          flights from Dallas, Denver, and Phoenix, with seasonal nonstop flights to Houston.
+        </p>
+        <a href="https://flydurango.com/1748/Airport">Website</a>
+      </div>
+
+      <div class="card">
+        <h3>Animas Transportation + Buck Horn Limousine</h3>
+        <p>
+          These companies offer airport shuttles and full-service transportation services.
+        </p>
+        <p>
+          <a href="https://animastransportation.com">Animas Transportation</a><br>
+          <a href="https://www.buckhornlimousine.com">Buck Horn Limousine</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Where to Stay</h2>
+
+      <div class="card">
+        <h3>The Strater Hotel</h3>
+        <p>
+          Located on Main St. in downtown Durango, The Strater Hotel has 88 unique guest rooms,
+          a Wild West themed saloon, a craft cocktail lounge, a steak and seafood restaurant,
+          and year-round live entertainment for all to enjoy. Durango’s history comes alive at
+          the Historic Strater Hotel.
+        </p>
+        <a href="https://strater.com">Website</a>
+      </div>
+
+      <div class="card">
+        <h3>The DoubleTree by Hilton</h3>
+        <p>
+          The DoubleTree Hotel is a casually elegant hotel with 150 rooms located on the Animas
+          River in downtown Durango. It has an indoor pool, hot tub, and on-site restaurant.
+        </p>
+        <a href="https://www.hilton.com/en/locations/usa/colorado/durango/doubletree-by-hilton/?WT.mc_id=zlada0ww1dt2psh3ggl4advbpp5dkt6multibr7_153659867_1003528&gclsrc=aw.ds&gad_source=1&gad_campaignid=714334213&gbraid=0AAAAADOgsqt4TDm2iBnoAPZVUedN0L_4Z&gclid=Cj0KCQjwovPGBhDxARIsAFhgkwTJNq2bGBsvVJJoLOFPP21LL9144AtEQ_Ty2_wUibUZr_c3Wp3QQ40aApVpEALw_wcB">Website</a>
+      </div>
+
+      <div class="card">
+        <h3>The Rochester Hotel</h3>
+        <p>
+          The Rochester Hotel is a romantic boutique hotel located in downtown Durango. It is a
+          historic landmark that blends history and contemporary elegance. This newly renovated
+          property has 15 rooms and a beautiful bar and garden area on site.
+        </p>
+        <a href="https://www.rochesterhotel.com">Website</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Where to Dine</h2>
+
+      <div class="card">
+        <h3>Steamworks</h3>
+        <p>
+          One of Durango’s best restaurants, Steamworks has great food and a fun atmosphere.
+          There is a great beer selection and a large menu with a variety of options. Located in
+          downtown Durango and family friendly, this is a great stop for everyone.
+        </p>
+        <a href="https://steamworksbrewing.com">Website</a>
+      </div>
+
+      <div class="card">
+        <h3>Diamond Belle Saloon</h3>
+        <p>
+          The Diamond Belle Saloon is a historic Wild West saloon that offers food and drinks,
+          along with live music from talented musicians every night.
+        </p>
+        <a href="https://strater.com/diamond-belle-saloon/">Website</a>
+      </div>
+
+      <div class="card">
+        <h3>Eolus</h3>
+        <p>
+          Known for exceptional food and service, Eolus offers a fresh take on New American
+          cuisine. They source many ingredients from local farms and producers, and every dish
+          is full of flavor and authenticity.
+        </p>
+        <a href="https://www.eolusdurango.com">Website</a>
+      </div>
+
+      <div class="card">
+        <h3>The Nugget Mountain Bar</h3>
+        <p>
+          The Nugget Mountain Bar is located half a mile south of Purgatory Ski Resort. The bar
+          is an old miner’s cabin with a large deck and views of the San Juan Mountains, offering
+          casual food and drinks with a beautiful view.
+        </p>
+        <a href="https://www.nuggetmountainbar.com">Website</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Things to Do</h2>
+
+      <div class="card">
+        <h3>Hike Animas Mountain</h3>
+        <p>
+          A popular and iconic trail in Durango, Animas Mountain has spectacular views and the
+          main loop is easy to follow. The loop is a lollipop heading in a counter-clockwise
+          direction. Hike up the trail for a few hundred yards from the parking area and take a
+          right at the first trail junction, continuing to follow the loop counter-clockwise.
+        </p>
+        <a href="https://www.durangotrails.org/trails/animas-mountain-trail-system/">More Info</a>
+      </div>
+
+      <div class="card">
+        <h3>Durango + Silverton Narrow Gauge Historic Train</h3>
+        <p>
+          The Durango and Silverton Narrow Gauge Railroad winds through spectacular and
+          breathtaking canyons in the remote wilderness of the San Juan National Forest.
+          Experience the same tracks that miners, cowboys, and settlers of the Old West took.
+        </p>
+        <a href="https://www.durangotrain.com">More Info</a>
+      </div>
+
+      <div class="card">
+        <h3>Durango Hot Springs</h3>
+        <p>
+          Durango Hot Springs is located 8 miles north of downtown Durango and 15 miles south of
+          Purgatory Ski Resort. Surrounded by mountain views, these natural mineral hot springs
+          are the perfect place to relax. This newly renovated resort also offers massages and
+          spa treatments.
+        </p>
+        <a href="https://durangohotspringsresortandspa.com">More Info</a>
+      </div>
+
+      <div class="card">
+        <h3>Purgatory Ski Resort</h3>
+        <p>
+          Purgatory Ski Resort offers many activities. In the summer they offer a mountain
+          coaster, alpine slide, treasure panning, a scenic chairlift ride, and paddle boarding.
+        </p>
+        <a href="https://www.purgatory.ski/day-tickets/">More Info</a>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 
