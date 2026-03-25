@@ -8,12 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Cinzel', serif;
-      background-color: #f7f4ef;
-      color: #5a3a2e;
-    }
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background-color: #f7f4ef;
+  color: #5a3a2e;
+}
+
 .site-title {
   position: absolute;
   top: 20px;
@@ -24,25 +25,27 @@
   color: #5a3a2e;
   white-space: nowrap;
 }
-    .nav {
-      position: absolute;
-      top: 85px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 90%;
-    }
 
-    .nav a {
-      text-decoration: none;
-      color: #5a3a2e;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+.nav {
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #5a3a2e;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .nav::after {
   content: "";
   position: absolute;
@@ -53,101 +56,102 @@
   height: 1px;
   background-color: rgba(90, 58, 46, 0.3);
 }
-    .page {
-      padding-top: 225px; /* ← ONLY CHANGE */
-      text-align: center;
-      padding: 0 20px 80px;
-    }
 
-    h1 {
-      font-size: 40px;
-      letter-spacing: 3px;
-      margin-bottom: 20px;
-    }
+.page {
+  padding: 225px 20px 80px;
+  text-align: center;
+}
 
-    .intro {
-      font-size: 18px;
-      max-width: 760px;
-      margin: 0 auto 50px;
-      line-height: 1.8;
-    }
+h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
 
-    .section {
-      max-width: 850px;
-      margin: 0 auto 55px;
-    }
+.intro {
+  font-size: 18px;
+  max-width: 760px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+}
 
-    .section h2 {
-      font-size: 28px;
-      letter-spacing: 2px;
-      margin-bottom: 30px;
-      text-transform: uppercase;
-    }
+.section {
+  max-width: 850px;
+  margin: 0 auto 55px;
+}
 
-    .card {
-      background-color: rgba(255, 255, 255, 0.65);
-      border: 1px solid rgba(90, 58, 46, 0.12);
-      border-radius: 14px;
-      padding: 24px;
-      margin-bottom: 24px;
-      text-align: left;
-    }
+.section h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
 
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-size: 22px;
-      letter-spacing: 1px;
-    }
+.card {
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(90, 58, 46, 0.12);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+}
 
-    .card p {
-      font-size: 17px;
-      line-height: 1.8;
-      margin-bottom: 10px;
-    }
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
 
-    .card a {
-      color: #5a3a2e;
-      text-decoration: none;
-      font-size: 16px;
-      letter-spacing: 1px;
-    }
+.card p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
 
-    .card a:hover {
-      text-decoration: underline;
-    }
+.card a {
+  color: #5a3a2e;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
 
-    @media (max-width: 768px) {
-      .nav {
-        gap: 18px;
-        top: 25px;
-      }
+.card a:hover {
+  text-decoration: underline;
+}
 
-      .nav a {
-        font-size: 13px;
-      }
+@media (max-width: 768px) {
+  .nav {
+    gap: 18px;
+    top: 25px;
+  }
 
-      .page {
-        padding-top: 280px;
-      }
+  .nav a {
+    font-size: 13px;
+  }
 
-      h1 {
-        font-size: 32px;
-      }
+  /* 🔥 FIXED HERE */
+  .page {
+    padding: 280px 20px 80px;
+  }
 
-      .section h2 {
-        font-size: 22px;
-      }
+  h1 {
+    font-size: 32px;
+  }
 
-      .card h3 {
-        font-size: 19px;
-      }
+  .section h2 {
+    font-size: 22px;
+  }
 
-      .card p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  .card h3 {
+    font-size: 19px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
+</style>
 </head>
 
 <body>
