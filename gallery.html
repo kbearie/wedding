@@ -68,45 +68,59 @@ p {
 }
 
 .gallery {
-    max-width: 1200px;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .gallery img {
-    width: 100%;
-    height: 520px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 
-.gallery .feature-photo {
-    grid-column: 1 / -1;
-    height: 700px;
+.feature-photo,
+.wide-photo,
+.gaslight-photo {
+  grid-column: 1 / -1;
 }
 
-.gallery .wide-photo {
-    grid-column: 1 / -1;
-    height: 620px;
+.feature-photo,
+.wide-photo,
+.gaslight-photo {
+  height: auto;
+}
+
+.tall-photo {
+  height: 700px;
+  object-fit: cover;
+}
+
+.small-photo {
+  height: 420px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        padding: 12px;
-    }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px;
+  }
 
-    .gallery img,
-    .gallery .feature-photo,
-    .gallery .wide-photo {
-        grid-column: auto;
-        height: auto;
-    }
+  .feature-photo,
+  .wide-photo,
+  .gaslight-photo,
+  .tall-photo,
+  .small-photo {
+    grid-column: auto;
+    height: auto;
+    object-fit: contain;
+  }
 }
 }
   
@@ -162,33 +176,34 @@ p {
 
   <img class="wide-photo" src="IMG_9965.JPG" alt="Gavin kissing Katherine's cheek">
 
-  <img src="DSC07844.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="DSC07905.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="gaslight-photo" src="IMG_9957.JPG" alt="Katherine and Gavin at the Gaslight Theatre">
 
-  <img class="wide-photo" src="DSC08074.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="tall-photo" src="IMG_9953.JPG" alt="Katherine and Gavin smiling together">
+  <img class="tall-photo" src="DSC08074.JPG" alt="Katherine and Gavin in the library">
 
-  <img src="IMG_9942.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9943.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9944.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9945.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="small-photo" src="IMG_9958.JPG" alt="Katherine and Gavin looking at a book">
+  <img class="small-photo" src="IMG_9960.JPG" alt="Katherine and Gavin by the bookshelf">
 
-  <img class="wide-photo" src="IMG_9953.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="wide-photo" src="IMG_9956.JPG" alt="Katherine and Gavin kissing">
 
-  <img src="IMG_9954.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9955.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9956.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9957.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9958.JPG" alt="Katherine and Gavin engagement photo">
-  <img src="IMG_9959.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="small-photo" src="IMG_9961.JPG" alt="Engagement ring">
+  <img class="small-photo" src="IMG_9963.JPG" alt="Engagement ring detail">
 
-  <img class="wide-photo" src="IMG_9960.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="tall-photo" src="DSC07844.JPG" alt="Katherine and Gavin engagement portrait">
+  <img class="tall-photo" src="DSC07905.JPG" alt="Katherine and Gavin engagement portrait">
 
-  <img src="IMG_9961.JPG" alt="Engagement ring">
-  <img src="IMG_9963.JPG" alt="Engagement ring">
-  <img src="IMG_9964.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="small-photo" src="IMG_9942.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="small-photo" src="IMG_9943.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img class="small-photo" src="IMG_9944.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="small-photo" src="IMG_9945.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img class="small-photo" src="IMG_9954.JPG" alt="Katherine and Gavin engagement photo">
+  <img class="small-photo" src="IMG_9955.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img class="wide-photo" src="IMG_9959.JPG" alt="Katherine and Gavin engagement photo">
 
 </div>
-
 </div>
 </body>
 
