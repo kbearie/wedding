@@ -67,6 +67,26 @@ p {
   font-size: 18px;
 }
 
+.gallery {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+    transition: transform .3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+  
 /* MOBILE */
 @media (max-width: 768px) {
   .nav {
@@ -113,10 +133,32 @@ p {
 
 <h1>Photo Gallery</h1>
 
-<p>Check back soon!</p>
+<div class="gallery">
+
+<img src="DSC07844.JPG">
+<img src="DSC07905.JPG">
+<img src="DSC08074.JPG">
+<img src="IMG_9942.JPG">
+<img src="IMG_9943.JPG">
+<img src="IMG_9944.JPG">
+<img src="IMG_9945.JPG">
+<img src="IMG_9950.JPG">
+<img src="IMG_9953.JPG">
+<img src="IMG_9954.JPG">
+<img src="IMG_9955.JPG">
+<img src="IMG_9956.JPG">
+<img src="IMG_9957.JPG">
+<img src="IMG_9958.JPG">
+<img src="IMG_9959.JPG">
+<img src="IMG_9960.JPG">
+<img src="IMG_9961.JPG">
+<img src="IMG_9963.JPG">
+<img src="IMG_9964.JPG">
+<img src="IMG_9965.JPG">
 
 </div>
 
+</div>
 </body>
 
 </html>
