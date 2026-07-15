@@ -84,16 +84,18 @@ p {
 }
 
 .feature-photo,
-.wide-photo,
+.wide-photo {
   grid-column: 1 / -1;
 }
 
 .feature-photo,
-.wide-photo,
- .half-photo {
-    height: 420px;
-    object-fit: cover;
+.wide-photo {
+  height: auto;
 }
+
+.half-photo {
+  height: 420px;
+  object-fit: cover;
 }
 
 .tall-photo {
