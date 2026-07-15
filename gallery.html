@@ -71,20 +71,43 @@ p {
     max-width: 1200px;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
     padding: 20px;
 }
 
 .gallery img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(0,0,0,.15);
-    transition: transform .3s;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
 }
 
-.gallery img:hover {
-    transform: scale(1.03);
+.gallery .feature-photo {
+    grid-column: 1 / -1;
+    height: 700px;
+}
+
+.gallery .wide-photo {
+    grid-column: 1 / -1;
+    height: 620px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 12px;
+    }
+
+    .gallery img,
+    .gallery .feature-photo,
+    .gallery .wide-photo {
+        grid-column: auto;
+        height: auto;
+    }
+}
 }
   
 /* MOBILE */
@@ -135,26 +158,34 @@ p {
 
 <div class="gallery">
 
-<img src="DSC07844.JPG">
-<img src="DSC07905.JPG">
-<img src="DSC08074.JPG">
-<img src="IMG_9942.JPG">
-<img src="IMG_9943.JPG">
-<img src="IMG_9944.JPG">
-<img src="IMG_9945.JPG">
-<img src="IMG_9950.JPG">
-<img src="IMG_9953.JPG">
-<img src="IMG_9954.JPG">
-<img src="IMG_9955.JPG">
-<img src="IMG_9956.JPG">
-<img src="IMG_9957.JPG">
-<img src="IMG_9958.JPG">
-<img src="IMG_9959.JPG">
-<img src="IMG_9960.JPG">
-<img src="IMG_9961.JPG">
-<img src="IMG_9963.JPG">
-<img src="IMG_9964.JPG">
-<img src="IMG_9965.JPG">
+  <img class="feature-photo" src="IMG_9950.JPG" alt="Katherine and Gavin walking together">
+
+  <img class="wide-photo" src="IMG_9965.JPG" alt="Gavin kissing Katherine's cheek">
+
+  <img src="DSC07844.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="DSC07905.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img class="wide-photo" src="DSC08074.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img src="IMG_9942.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9943.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9944.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9945.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img class="wide-photo" src="IMG_9953.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img src="IMG_9954.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9955.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9956.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9957.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9958.JPG" alt="Katherine and Gavin engagement photo">
+  <img src="IMG_9959.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img class="wide-photo" src="IMG_9960.JPG" alt="Katherine and Gavin engagement photo">
+
+  <img src="IMG_9961.JPG" alt="Engagement ring">
+  <img src="IMG_9963.JPG" alt="Engagement ring">
+  <img src="IMG_9964.JPG" alt="Katherine and Gavin engagement photo">
 
 </div>
 
