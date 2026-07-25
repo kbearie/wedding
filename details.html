@@ -1,119 +1,317 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<title>Details | Katherine & Gavin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+  <title>Details | Katherine & Gavin</title>
 
-<style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap"
+    rel="stylesheet"
+  >
 
-body {
-  margin: 0;
-  font-family: 'Cinzel', serif;
-  background-color: #f7f4ef;
-  color: #5a3a2e;
-}
-.site-title {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 40px;
-  letter-spacing: 6px;
-  color: #5a3a2e;
-  white-space: nowrap;
-}
-.nav {
-  position: absolute;
-  top: 85px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 90%;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background-color: #f7f4ef;
+      color: #5a3a2e;
+    }
 
-.nav a {
-  text-decoration: none;
-  color: #5a3a2e;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.nav::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -15px;
-  width: 60%;
-  height: 1px;
-  background-color: rgba(90, 58, 46, 0.3);
-}
-.page {
-  padding-top: 225px;
-  text-align: center;
-}
+    .site-title {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      letter-spacing: 6px;
+      color: #5a3a2e;
+      white-space: nowrap;
+    }
 
-h1 {
-  font-size: 40px;
-  letter-spacing: 3px;
-}
+    .nav {
+      position: absolute;
+      top: 85px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+    }
 
-p {
-  font-size: 18px;
-}
+    .nav a {
+      text-decoration: none;
+      color: #5a3a2e;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .nav {
-    gap: 18px;
-    top: 25px;
-  }
+    .nav a:hover {
+      opacity: 0.65;
+    }
 
-  .nav a {
-    font-size: 13px;
-  }
+    .nav::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -15px;
+      width: 60%;
+      height: 1px;
+      background-color: rgba(90, 58, 46, 0.3);
+    }
 
-  .page {
-    padding-top: 280px;
-  }
+    .page {
+      padding: 225px 24px 100px;
+      text-align: center;
+    }
 
-  h1 {
-    font-size: 30px;
-  }
+    .page-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-  p {
-    font-size: 16px;
-  }
-}
+    h1 {
+      margin: 0 0 24px;
+      font-size: 40px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
 
-</style>
+    .intro {
+      max-width: 760px;
+      margin: 0 auto 60px;
+      font-size: 17px;
+      line-height: 1.9;
+    }
 
+    .detail-section {
+      padding: 45px 20px;
+      border-top: 1px solid rgba(90, 58, 46, 0.25);
+    }
+
+    .detail-section:last-child {
+      border-bottom: 1px solid rgba(90, 58, 46, 0.25);
+    }
+
+    .detail-section h2 {
+      margin: 0 0 22px;
+      font-size: 24px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .detail-section h3 {
+      margin: 0 0 15px;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .detail-section p {
+      max-width: 730px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .dress-code-title {
+      margin-bottom: 14px;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .style-intro {
+      margin-bottom: 40px !important;
+    }
+
+    .lookbook-group {
+      margin-top: 50px;
+    }
+
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .lookbook-grid img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-placeholder {
+      height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(90, 58, 46, 0.25);
+      background-color: rgba(90, 58, 46, 0.04);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .site-title {
+        top: 18px;
+        font-size: 27px;
+        letter-spacing: 4px;
+      }
+
+      .nav {
+        top: 80px;
+        gap: 14px 18px;
+        width: 94%;
+      }
+
+      .nav a {
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+
+      .nav::after {
+        bottom: -18px;
+        width: 80%;
+      }
+
+      .page {
+        padding-top: 245px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .intro {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+      }
+
+      .detail-section {
+        padding: 38px 5px;
+      }
+
+      .detail-section h2 {
+        font-size: 20px;
+      }
+
+      .detail-section p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .lookbook-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .lookbook-grid img,
+      .image-placeholder {
+        height: 430px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div class="site-title">Katherine & Gavin</div>
-<div class="nav">
-  <a href="index.html">Home</a>
-  <a href="flying-b-ranch.html">Flying B Ranch</a>
-  <a href="travel.html">Travel</a>
-  <a href="wedding-week.html">Wedding Week</a>
-  <a href="details.html">Details</a>
-  <a href="gallery.html">Photo Gallery</a>
-  <a href="rsvp.html">RSVP</a>
-</div>
 
-<div class="page">
+  <div class="site-title">Katherine & Gavin</div>
 
-<h1>Details</h1>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="flying-b-ranch.html">Flying B Ranch</a>
+    <a href="travel.html">Travel</a>
+    <a href="wedding-week.html">Wedding Week</a>
+    <a href="details.html">Details</a>
+    <a href="gallery.html">Photo Gallery</a>
+    <a href="rsvp.html">RSVP</a>
+  </div>
 
-<p>More details to follow.</p>
+  <main class="page">
+    <div class="page-content">
 
-</div>
+      <h1>Details</h1>
+
+      <p class="intro">
+        Everything you need to know before joining us at Flying B Ranch.
+        Additional information, including final shuttle times and locations,
+        will be shared as we get closer to the wedding.
+      </p>
+
+      <section class="detail-section">
+        <h2>Transportation</h2>
+
+        <p>
+          Complimentary shuttle service will be provided to and from Flying B
+          Ranch for all guests. Shuttles will depart from a designated location
+          in downtown Durango before the ceremony and will return throughout the
+          evening. Final pick-up times and location details will be shared closer
+          to the wedding.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Dress Code</h2>
+
+        <div class="dress-code-title">Formal Attire</div>
+
+        <p>
+          We invite our guests to dress in formal attire for our celebration.
+          Our ceremony and reception will take place outdoors on the meadow, so
+          we recommend selecting footwear that is comfortable for walking on
+          grass and natural terrain.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Weather</h2>
+
+        <p>
+          July in Durango typically brings warm, sunny afternoons followed by
+          cooler mountain evenings. Because temperatures may drop after sunset,
+          we recommend bringing a light jacket, shawl, or wrap for later in the
+          evening.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Children</h2>
+
+        <p>
+          While we wanted the children in our families to feel included in our
+          celebration, please know that the wedding has been planned with adults
+          in mind and will not include children's activities, entertainment, or
+          special accommodations. The evening will include a formal dinner,
+          speeches, dancing, and festivities continuing late into the night.
+          Parents of invited children are encouraged to consider which option
+          will allow their family to feel the most comfortable and fully enjoy
+          the celebration. Children who attend must remain closely supervised
+          throughout the evening.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Style Inspiration</h2>
+
+     
+      </section>
+
+    </div>
+  </main>
 
 </body>
 
