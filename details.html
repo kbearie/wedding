@@ -280,6 +280,54 @@
       padding: 0 24px;
     }
   }
+    .lookbook-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.lookbook-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  height: 90%;
+  margin: auto;
+  background: white;
+}
+
+.lookbook-modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.lookbook-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  z-index: 2;
+  background: white;
+  border: none;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+
+@media (max-width: 700px) {
+  .lookbook-modal {
+    padding: 15px;
+  }
+
+  .lookbook-modal-content {
+    width: 100%;
+    height: 85%;
+  }
+}
 </style>
 </head>
 
@@ -390,7 +438,7 @@
     <p>
       Time to saddle up and bring out your boots and hat for this cowboy cocktail event! Think western-inspired, relaxed, and elevated with a little Colorado charm. Dresses for woman and anything from suites to jeans and pearl snaps for the men. 
     </p>
-    <a href="WelcomePartyLookBook.pdf" target="_blank" class="style-guide-link">
+    <a href="#" class="style-guide-link" onclick="openWelcomeLookbook(); return false;">
   View Look Book →
 </a>
   </div>
@@ -415,7 +463,47 @@
 <footer class="wedding-footer" style="text-align: center; margin-top: 15px; padding: 10px 0 20px;">
   <img src="K+G wedding logo.png" alt="K and G wedding logo" style="width: 500px; height: auto;"> 
   </footer>
-  
+
+  <!-- Welcome Party Look Book Popup -->
+<div id="welcomeLookbook" class="lookbook-modal">
+  <div class="lookbook-modal-content">
+
+    <button class="lookbook-close" onclick="closeWelcomeLookbook()">
+      &times;
+    </button>
+
+    <iframe
+      src="WelcomePartyLookBook.pdf"
+      title="Welcome Party Style Look Book">
+    </iframe>
+
+  </div>
+</div>
+  <script>
+  function openWelcomeLookbook() {
+    document.getElementById("welcomeLookbook").style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeWelcomeLookbook() {
+    document.getElementById("welcomeLookbook").style.display = "none";
+    document.body.style.overflow = "";
+  }
+
+  // Close when clicking the dark background
+  document.getElementById("welcomeLookbook").addEventListener("click", function(event) {
+    if (event.target === this) {
+      closeWelcomeLookbook();
+    }
+  });
+
+  // Close with Escape key
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      closeWelcomeLookbook();
+    }
+  });
+</script>
 </body>
 
 </html>
