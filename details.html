@@ -448,7 +448,7 @@
     <p>
       Traditional formal dress code for the wedding day. We would love to see summer inspired colors with fun patterns and textures. Full length dresses with comfortable heels for woman and suits or tuxedos for men. 
     </p>
-   <a href="WelcomePartyLookBook.jpg" target="_blank" class="style-guide-link">
+   <a href="#" class="style-guide-link" onclick="openWeddingLookbook(); return false;">
   View Look Book →
 </a>
   </div>
@@ -479,6 +479,21 @@
 
   </div>
 </div>
+  <!-- Wedding Day Look Book Popup -->
+<div id="weddingLookbook" class="lookbook-modal">
+  <div class="lookbook-modal-content">
+
+    <button class="lookbook-close" onclick="closeWeddingLookbook()">
+      &times;
+    </button>
+
+    <iframe
+      src="WeddingLookBook.pdf"
+      title="Wedding Day Style Look Book">
+    </iframe>
+
+  </div>
+</div>
   <script>
   function openWelcomeLookbook() {
     document.getElementById("welcomeLookbook").style.display = "flex";
@@ -503,6 +518,15 @@
       closeWelcomeLookbook();
     }
   });
+    function openWeddingLookbook() {
+  document.getElementById("weddingLookbook").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function closeWeddingLookbook() {
+  document.getElementById("weddingLookbook").style.display = "none";
+  document.body.style.overflow = "";
+}
 </script>
 </body>
 
