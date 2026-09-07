@@ -239,6 +239,48 @@
       }
     }
   </style>
+  <style>
+  .style-inspo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 900px;
+    margin: 40px auto 70px;
+    text-align: center;
+  }
+
+  .style-inspo-item h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .style-inspo-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 340px;
+    margin: 0 auto 18px;
+  }
+
+  .style-guide-link {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 3px;
+  }
+
+  @media (max-width: 700px) {
+    .style-inspo-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 0 24px;
+    }
+  }
+</style>
 </head>
 
 <body>
